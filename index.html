@@ -24,12 +24,36 @@
   </style>
 </head>
 <body>
-<div id="music_bg"></div>
+<div id="music_bg">
+	
+</div>
 <div id="heoMusic-page">
+</div>
+<ul style="position:absolute;">
+					<li class="ww">1</li>
+		        <ul class="www">
+		          <li>2<></li>
+		          <li>3<></li>
+		          <li>4<></li>
+		        </ul>
+					
+				</ul>
+				<input id="fm" value=""><button onclick="fun()">www</button>
 </div>
 <script>
   var userId = "8236315959";
   var userServer = "tencent";
+  function fun () {
+  	var a=  document.getElementById('fm').value
+      	 console.log(userId)
+      
+            if(a!=""){
+              userId=a;
+              console.log(userId)
+              heo.geCustomPlayList();
+      
+            }
+  }
 </script>
 <script src="./js/APlayer.min.js"></script>
 <script src="./js/Meting2.min.js"></script>
